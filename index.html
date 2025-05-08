@@ -13,15 +13,15 @@
     <p>School of Computing, Gachon University</p>
     <br>
     <p><b>KIISC 학생회원</b></p>
-    <button id="refreshBtn" class="refresh-button">🔄</button>
+    <button id="refreshBtn" class="spin-button">🔄</button>
   </div>
 
   <script>
-    const btn = document.getElementById('refreshBtn');
-    let rotation = 0;
+    const btn = document.getElementById('spinBtn');
+    let spin = 0;
     btn.addEventListener('click', () => {
-      rotation += 90;
-      document.body.style.transform = `rotate(${rotation}deg)`;
+      spin += 90;
+      document.body.style.transform = `rotate(${spin}deg)`;
       document.body.style.transition = 'transform 0.5s ease';
     });
   </script>
