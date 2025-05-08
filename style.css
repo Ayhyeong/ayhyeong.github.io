@@ -51,7 +51,7 @@ body {
   color: #1e40af;
 }
 
-.refresh-button {
+.spin-button {
   margin-top: 1.5rem;
   padding: 0.5rem 1rem;
   font-size: 0.95rem;
@@ -60,10 +60,9 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.4s ease, background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
-.refresh-button:hover {
+.spin-button:hover {
   background-color: #1e40af;
 }
-
