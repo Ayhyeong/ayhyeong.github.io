@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <title>박계형</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      transform-origin: center center;
+    }
+  </style>
 </head>
 <body>
   <div class="card">
@@ -13,15 +18,15 @@
     <p>School of Computing, Gachon University</p>
     <br>
     <p><b>KIISC 학생회원</b></p>
-    <button id="refreshBtn" class="spin-button">🔄</button>
+    <button id="refreshBtn" class="refresh-button"> </button>
   </div>
 
   <script>
-    const btn = document.getElementById('spinBtn');
-    let spin = 0;
+    const btn = document.getElementById('rotateBtn');
+    let rotation = 0;
     btn.addEventListener('click', () => {
-      spin += 90;
-      document.body.style.transform = `rotate(${spin}deg)`;
+      rotation += 90;
+      document.body.style.transform = `rotate(${rotation}deg)`;
       document.body.style.transition = 'transform 0.5s ease';
     });
   </script>
