@@ -8,10 +8,19 @@
 <body>
   <div class="card">
     <h1>박계형</h1>
-    <br>
     <p class="title"><b>가천대학교 소프트웨어전공</b></p>
     <p>School of Computing, Gachon University</p>
-    <br>
     <p><b>KIISC 학생회원</b></p>
+    <button id="refreshBtn" class="refresh-button">새로고침</button>
+  </div>
+
+  <script>
+    const btn = document.getElementById('refreshBtn');
+    let rotation = 0;
+    btn.addEventListener('click', () => {
+      rotation += 90;
+      btn.style.transform = `rotate(${rotation}deg)`;
+    });
+  </script>
 </body>
 </html>
